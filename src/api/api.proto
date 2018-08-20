@@ -1,0 +1,14 @@
+syntax="proto3";
+package api;
+
+message Request {
+	string RequestApi = 1;
+}
+
+message Response {
+	string ResponseApi = 1;
+}
+
+service Greeting {
+	rpc SayHello(Request) returns (Response) {};
+}
